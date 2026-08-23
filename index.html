@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Invitación digital premium para los 15 años de Zoe. Confirmación de asistencia, countdown, ubicación y detalles del evento.">
+  <meta name="theme-color" content="#171214">
+  <meta name="color-scheme" content="dark">
+  <title>Zoe · Mis 15</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Italianno&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="wordmark" href="#hero" aria-label="Zoe Mis 15">
+        <span class="wordmark__name">Zoe</span>
+        <span class="wordmark__divider" aria-hidden="true"></span>
+        <span class="wordmark__event">Mis 15</span>
+      </a>
+
+      <nav class="topnav" aria-label="Secciones principales">
+        <a href="#evento">Evento</a>
+        <a href="#countdown">Countdown</a>
+        <a href="#rsvp">RSVP</a>
+        <a href="#ubicacion">Ubicación</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero__media" aria-hidden="true">
+        <video class="hero__video" autoplay muted loop playsinline poster="assets/images/hero-poster.svg">
+          <source src="assets/video/hero.webm" type="video/webm">
+          <source src="assets/video/hero.mp4" type="video/mp4">
+        </video>
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="container hero__content reveal">
+        <p class="hero__eyebrow">Una noche para recordar</p>
+        <h1 id="hero-title" class="hero__name">Zoe</h1>
+        <p class="hero__subtitle">Mis 15</p>
+        <p class="hero__prompt">Agendá la fecha</p>
+        <p class="hero__date">23 · 10 · 2026</p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#rsvp">Confirmar asistencia</a>
+          <a class="btn btn--ghost" href="#ubicacion">Cómo llegar</a>
+        </div>
+
+        <a class="scroll-hint" href="#intro" aria-label="Descubrir todos los detalles">
+          <span>Descubrí todos los detalles</span>
+          <span class="scroll-hint__arrow" aria-hidden="true">↓</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section intro reveal" id="intro">
+      <div class="container intro__inner">
+        <p>Hay momentos que se esperan durante mucho tiempo.</p>
+        <p>Y hay noches que merecen ser celebradas para siempre.</p>
+        <h2>Quiero que seas parte de esta noche tan especial.</h2>
+      </div>
+    </section>
+
+    <section class="section event" id="evento" aria-labelledby="event-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-heading__eyebrow">Información del evento</p>
+          <h2 id="event-title">Todo lo que necesitás saber</h2>
+        </div>
+
+        <div class="event-grid">
+          <article class="event-card reveal">
+            <span class="event-card__icon" aria-hidden="true">01</span>
+            <p class="event-card__label">Cuándo</p>
+            <h3>Viernes</h3>
+            <p>23 de octubre de 2026</p>
+            <p class="event-card__accent">21:00 hs</p>
+          </article>
+
+          <article class="event-card reveal">
+            <span class="event-card__icon" aria-hidden="true">02</span>
+            <p class="event-card__label">Dónde</p>
+            <h3>GREL'S Eventos</h3>
+            <p>Av. de Mayo 1357</p>
+            <p>Ramos Mejía, Buenos Aires</p>
+            <a class="text-link" href="https://www.grels.com.ar/" target="_blank" rel="noopener noreferrer">Conocé el salón</a>
+          </article>
+
+          <article class="event-card event-card--featured reveal">
+            <span class="event-card__icon" aria-hidden="true">03</span>
+            <p class="event-card__label">Dress code</p>
+            <h3>Elegante de noche</h3>
+            <p>Un look sofisticado, cómodo y pensado para una celebración especial.</p>
+            <p class="event-card__accent">El rosa en todos sus tonos está reservado exclusivamente para Zoe.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section countdown-section" id="countdown" aria-labelledby="countdown-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-heading__eyebrow">Countdown</p>
+          <h2 id="countdown-title">Falta menos para el gran día</h2>
+        </div>
+
+        <div class="countdown reveal" aria-live="polite" aria-atomic="true">
+          <div class="countdown__unit">
+            <span class="countdown__value" data-countdown-days>00</span>
+            <span class="countdown__label">Días</span>
+          </div>
+          <div class="countdown__unit">
+            <span class="countdown__value" data-countdown-hours>00</span>
+            <span class="countdown__label">Horas</span>
+          </div>
+          <div class="countdown__unit">
+            <span class="countdown__value" data-countdown-minutes>00</span>
+            <span class="countdown__label">Minutos</span>
+          </div>
+          <div class="countdown__unit">
+            <span class="countdown__value" data-countdown-seconds>00</span>
+            <span class="countdown__label">Segundos</span>
+          </div>
+        </div>
+
+        <p class="countdown__message" data-countdown-message>La cuenta regresiva ya empezó.</p>
+      </div>
+    </section>
+
+<!--     <section class="section dresscode" id="dresscode" aria-labelledby="dresscode-title">
+      <div class="container dresscode__grid">
+        <div class="section-heading section-heading--left reveal">
+          <p class="section-heading__eyebrow">Dress code</p>
+          <h2 id="dresscode-title">La elegancia también está en los detalles</h2>
+        </div>
+
+        <div class="dresscode-card reveal">
+          <p>La paleta sugerida acompaña la estética de la noche: rosa Dior, tonos profundos, marfil y dorado champagne en acentos sutiles.</p>
+          <div class="palette" aria-hidden="true">
+            <span style="background:#f5cee7"></span>
+            <span style="background:#bd6490"></span>
+            <span style="background:#8a1557"></span>
+            <span style="background:#171214"></span>
+            <span style="background:#d6b36a"></span>
+          </div>
+          <p class="dresscode-card__note">Buscamos una presencia cuidada, sobria y sofisticada. Menos, pero mejor.</p>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="section rsvp" id="rsvp" aria-labelledby="rsvp-title">
+      <div class="container rsvp__grid">
+        <div class="rsvp__copy reveal">
+          <div class="section-heading section-heading--left">
+            <p class="section-heading__eyebrow">Confirmación</p>
+            <h2 id="rsvp-title">Contame si vas a acompañarnos</h2>
+          </div>
+
+          <p class="rsvp__lead">Completá tus datos y elegí el contacto por WhatsApp. Si necesitás una dieta especial, se activan las preferencias solo cuando confirmás asistencia.</p>
+
+          <div class="contact-chips" aria-label="Contactos de WhatsApp">
+            <button class="chip" type="button" data-whatsapp-contact="zoe">Zoe</button>
+            <button class="chip" type="button" data-whatsapp-contact="susy">Susy</button>
+            <button class="chip" type="button" data-whatsapp-contact="andy">Andy</button>
+          </div>
+        </div>
+
+        <form class="rsvp-form reveal" id="rsvp-form" novalidate>
+          <div class="field">
+            <label for="guest-name">Nombre y apellido</label>
+            <input id="guest-name" name="guestName" type="text" autocomplete="name" required placeholder="Tu nombre completo">
+            <p class="field__error" data-error-for="guestName" aria-live="polite"></p>
+          </div>
+
+          <fieldset class="field">
+            <legend>¿Vas a asistir?</legend>
+            <div class="segmented" role="radiogroup" aria-describedby="attendance-help">
+              <label class="segmented__option">
+                <input type="radio" name="attendance" value="Sí" required>
+                <span>Sí, voy a ir</span>
+              </label>
+              <label class="segmented__option">
+                <input type="radio" name="attendance" value="No">
+                <span>No podré asistir</span>
+              </label>
+            </div>
+            <p id="attendance-help" class="field__helper">La confirmación es obligatoria para continuar.</p>
+            <p class="field__error" data-error-for="attendance" aria-live="polite"></p>
+          </fieldset>
+
+          <fieldset class="field" id="dietary-fieldset" hidden>
+            <legend>¿Necesitás una dieta especial?</legend>
+            <div class="segmented" role="radiogroup" aria-describedby="dietary-help">
+              <label class="segmented__option">
+                <input type="radio" name="dietaryNeed" value="Sí">
+                <span>Sí</span>
+              </label>
+              <label class="segmented__option">
+                <input type="radio" name="dietaryNeed" value="No">
+                <span>No</span>
+              </label>
+            </div>
+            <p id="dietary-help" class="field__helper">Si elegís sí, vas a poder marcar una o más preferencias.</p>
+            <p class="field__error" data-error-for="dietaryNeed" aria-live="polite"></p>
+          </fieldset>
+
+          <div class="field field--toggle" id="dietary-options" hidden>
+            <span class="field__label">Preferencias alimentarias</span>
+            <div class="checkbox-grid">
+              <label class="checkbox">
+                <input type="checkbox" name="dietaryPreferences" value="Vegetariano">
+                <span>Vegetariano</span>
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" name="dietaryPreferences" value="Vegano">
+                <span>Vegano</span>
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" name="dietaryPreferences" value="Sin TACC">
+                <span>Sin TACC</span>
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" name="dietaryPreferences" value="Sin lactosa">
+                <span>Sin lactosa</span>
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" name="dietaryPreferences" value="Sin azúcar">
+                <span>Sin azúcar</span>
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" name="dietaryPreferences" value="Otra" data-other-toggle>
+                <span>Otra</span>
+              </label>
+            </div>
+            <div class="field field--inline" id="other-dietary-wrap" hidden>
+              <label for="other-dietary">Contanos cuál</label>
+              <input id="other-dietary" name="otherDietary" type="text" placeholder="Especificá la preferencia">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">Mensaje opcional</label>
+            <textarea id="message" name="message" rows="4" placeholder="Si querés agregar algo, escribilo acá."></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn--primary" type="submit">Generar mensaje</button>
+            <p class="form-actions__note">Se abrirá WhatsApp con el texto listo para enviar.</p>
+          </div>
+
+          <div class="whatsapp-actions" aria-label="Enviar por WhatsApp">
+            <button class="whatsapp-btn" type="button" data-whatsapp-contact="zoe">Enviar a Zoe</button>
+            <button class="whatsapp-btn" type="button" data-whatsapp-contact="susy">Enviar a Susy</button>
+            <button class="whatsapp-btn" type="button" data-whatsapp-contact="andy">Enviar a Andy</button>
+          </div>
+
+          <p class="form-status" data-form-status aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section location" id="ubicacion" aria-labelledby="location-title">
+      <div class="container location__grid">
+        <div class="location__copy reveal">
+          <div class="section-heading section-heading--left">
+            <p class="section-heading__eyebrow">Ubicación</p>
+            <h2 id="location-title">GREL'S Eventos</h2>
+          </div>
+          <p class="location__text">Av. de Mayo 1357, Ramos Mejía, Buenos Aires, Argentina.</p>
+          <a class="btn btn--ghost btn--full" href="https://www.google.com/maps/search/?api=1&query=GREL%27S%20Eventos%20Av.%20de%20Mayo%201357%20Ramos%20Mej%C3%ADa%20Buenos%20Aires%20Argentina" target="_blank" rel="noopener noreferrer">Cómo llegar</a>
+        </div>
+
+        <div class="map-card reveal">
+          <iframe
+            title="Mapa de GREL'S Eventos"
+            src="https://www.google.com/maps?q=GREL%27S%20Eventos%2C%20Av.%20de%20Mayo%201357%2C%20Ramos%20Mej%C3%ADa%2C%20Buenos%20Aires%2C%20Argentina&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner reveal">
+      <p class="footer__lead">Te espero para celebrar una noche que no voy a olvidar.</p>
+      <p class="footer__signature">Zoe · Mis 15 · 23.10.2026</p>
+      <span class="footer__rule" aria-hidden="true"></span>
+    </div>
+  </footer>
+
+  <div class="quickbar" aria-label="Accesos rápidos">
+    <a href="#rsvp">Confirmar</a>
+    <a href="#ubicacion">Mapa</a>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
