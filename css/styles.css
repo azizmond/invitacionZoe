@@ -772,6 +772,7 @@ textarea:focus-visible {
 
 .footer__signature {
   margin: 0;
+  margin-bottom: 12px;
   font-family: "Cormorant Garamond", serif;
   font-size: clamp(1.8rem, 4.8vw, 2.8rem);
   color: var(--champagne-gold);
