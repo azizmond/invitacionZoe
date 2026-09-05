@@ -10,9 +10,9 @@ const EVENT_CONFIG = {
 };
 
 const whatsappContacts = {
-  zoe: "5411921908540",
-  susy: "5411934445790",
-  andy: "5411930753095"
+  zoe: "5491121908540",
+  susy: "5491134445790",
+  andy: "5491130753095"
 };
 
 const countdownNodes = {
@@ -224,9 +224,9 @@ function openWhatsApp(contactKey) {
   const message = buildMessage(contactKey);
   const url = `https://wa.me/${phone}?text=${message}`;
 
-  if (statusNode) {
+ /*  if (statusNode) {
     statusNode.textContent = `Preparando WhatsApp para ${formatContactLabel(contactKey)}...`;
-  }
+  } */
 
   window.open(url, "_blank", "noopener,noreferrer");
 }
